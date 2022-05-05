@@ -1,0 +1,47 @@
+body {
+    background: #87CDEB;
+    color: white;
+    border: 4px solid #52CD52;
+    padding: 30px;
+    margin: 30px auto;
+    width: 550px;
+}
+
+img {
+    width: 175px;
+    float: right;
+    margin: 10px;
+}
+li {
+    display: inline;
+}
+
+a {
+    color: #4ACC9A;
+}
+
+h1, ul {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Noto Serif', serif;
+    font-size: 1.8em;
+}
+
+p {
+    font-size: .9em;
+    line-height: 1.5;
+}
+
+ul, h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+ul {
+    font-weight: bold;
+}
+
+span {
+    color: gray;
+}

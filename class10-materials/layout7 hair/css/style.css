@@ -1,0 +1,241 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  font-size: 4rem;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 30px;
+  padding-top: 15px
+}
+
+nav li {
+  display: inline-block;
+  padding: 10px;
+}
+
+main{
+  background-image: url("../assets/header-background.JPG");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 700px;
+  margin-top: -23px;
+}
+/************************************************************************************/
+
+.mainH1container {
+  width: 50%;
+  position: relative;
+  top: 30%;
+  left: 10%;
+  color: white;
+}
+
+.mainH1container a{
+  background: black;
+  color: white;
+  padding: 10px 15px;
+}
+/************************************************************************************/
+
+.couponbox {
+  width: 200px;
+  height: 200px;
+  min-width: 20%;
+  position: relative;
+  left: 10%;
+  top: 40%;
+  background: black;
+  color: white;
+}
+
+.couponbox a {
+  padding: 10px 15px;
+  background: white;
+  color: black;
+}
+
+/************************************************************************************/
+.iconsSection {
+margin: 75px 0;
+}
+
+.iconContainer {    /*flexbox*/
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  gap: 40px;
+}
+
+.iconContainer img {
+  height: 50px;
+}
+
+.iconContainer > div {   /*flexitems*/
+  flex: 1 1 200px;
+}
+/************************************************************************************/
+
+.blurbSection {
+  background: rgb(241, 241, 241);
+  padding: 75px 0;
+}
+.blurbSection img {
+width: 100%;}
+
+.blurbContainer {     /*flexbox*/
+  display: flex;
+  width: 70%;
+  margin: auto;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.blurbContainer > section {   /*flexitems*/
+  flex: 1 1 300px;
+}
+
+.blurbContainer a {
+  background: black;
+  color: white;
+  padding: 10px 15px;
+}
+/************************************************************************************/
+
+.stylistSection {
+  margin: 75px 0;
+}
+
+.stylistContainer {       /*flexbox*/
+  display: flex;
+  justify-content: center;
+  gap: 40px 20px;
+  flex-wrap: wrap;
+}
+
+.stylistContainer > section {
+  width: 20%;
+  min-width: 200px;
+}
+
+.stylistSection img {
+  width: 100%;
+}
+
+.label {
+  background: black;
+  color: white;
+  width: 80%;
+}
+
+/************************************************************************************/
+
+.couponSection {
+  margin: 75px 0;
+}
+
+.couponContainer {
+  background: url("../assets/banner.jpg") bottom right no-repeat;
+  background-size: cover;
+  width: 70%;
+  margin: 0 auto;
+  height: 400px;
+}
+
+.couponContainer div {
+  position: relative ;
+  max-width: 60%;
+  min-width: 20%;
+  left: 8%;
+  top: 25%;
+}
+
+.couponContainer a {
+  background: black;
+  color: white;
+  padding: 10px 15px;
+}
+
+/************************************************************************************/
+.lookbook {
+  margin: 75px 0;
+  text-align: center;
+}
+
+.lookbookGrid {
+  display: grid;
+  gap: 1rem;
+  width: 70%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  margin: 0 auto;
+}
+
+.lookbookGrid > div {
+  border: 1px solid red;
+}
+
+.lookbookGrid > div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.lookbookGrid > div:first-child { 
+  grid-area: 1 / 1 / 2 / 2;
+}
+.lookbookGrid div:nth-child(2) {
+  grid-area: 1 / 2 / 3 / 3;
+}
+.lookbookGrid div:nth-child(3) {
+  grid-area: 1 / 3 / 2 / 4;
+}
+.lookbookGrid div:nth-child(4) {
+  grid-area: 2 / 1 / 4 / 2;
+}
+.lookbookGrid div:nth-child(5) {
+  grid-area: 2 / 3 / 4 / 4;
+}
+.lookbookGrid div:nth-child(6) {
+  grid-area: 3 / 2 / 4 / 3;
+}

@@ -1,0 +1,248 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+/* colors
+#66768A blue
+#D2D7DB gray
+#161F2A dark blue  */
+
+body {
+  width: 90%;
+  background: black;
+  margin: 0 auto;
+}
+
+
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  height: 70px;
+  background: #66768A;
+}
+
+
+/******************************************
+/* NAV
+/*******************************************/
+
+nav ul {
+  margin: 0 10px;
+  padding: 15px;
+}
+
+nav li {
+  list-style: none;
+  padding: 10px;
+  float: left;
+}
+
+nav li a {
+  text-decoration: none;
+  color: white;
+}
+
+
+nav ul li + li + li + li {
+  float: right;
+  background: white;
+  border-radius: 10px;
+}
+
+nav ul li + li + li + li a{
+  color: #161F2A;
+}
+
+nav img {
+  height: 50px;
+  margin: 0 350px;
+}
+
+
+
+/* <!--1---blue----------------------------------------->  */
+header + section {
+  height: 500px;
+  background: #66768A;
+  text-align: center;
+}
+
+header + section div {
+  max-width: 80%;
+  color: white;
+  margin: auto;
+}
+
+header + section div > h1 {
+  margin: 0;
+  padding: 80px 40px 30px 40px;
+  font-size: 2.5em;
+}
+
+header + section img {
+  height: 50px;
+  vertical-align: middle;
+}
+
+header + section a {
+  text-decoration: none;
+  color: #D2D7DB;
+}
+
+/* <!--2---white------------------------------------------>		 */
+header + section + section {
+  height: 400px;
+  background: white;
+}
+
+header + section + section div {
+  width: 50%;
+  color: #161F2A;
+  text-align: center;
+  margin: 0 auto;
+}
+
+header + section + section div h2 {
+  margin: 0;
+  padding: 120px 50px 0 50px;
+
+}
+
+
+/* <!--3---gray--------------------------------------->		 */
+header + section + section + section {
+  height: 700px;
+  background: #D2D7DB;
+  padding: 20px 50px;
+}
+
+header + section + section + section > section {
+  width: 50%;
+  float: left;
+  padding: 50px;
+  text-align: center;
+  color: #161F2A;
+  margin: 50px 0;
+}
+
+header + section + section + section > section div {
+  max-width: 80%;
+  height: 175px;
+  background: #66768A;
+  margin: auto;
+}
+
+header + section + section + section > section a{
+  text-decoration: none;
+  color: #161F2A;
+  border: 1px solid #66768A;
+  padding: 15px 40px;
+}
+header + section + section + section > section p{
+  margin-bottom: 50px;
+}
+
+/* <!--4---white------------------------------------------>		 */
+
+header + section + section + section + section {
+  height: 500px;
+  background: white;
+}
+header + section + section + section + section div{
+  width: 50%;
+  color: #161F2A;
+  text-align: center;
+  margin: 0 auto;
+}
+
+header + section + section + section + section div h2{
+  margin: 0;
+  padding: 120px 50px 0 50px;
+}
+
+header + section + section + section + section div a{
+  text-decoration: none;
+  color: #161F2A;
+  border: 1px solid #66768A;
+  padding: 15px 40px;
+}
+
+header + section + section + section + section div p {
+  margin-bottom: 50px;
+}
+
+
+
+/******************************************
+/* FOOTER
+/*******************************************/
+footer {
+  height: 250px;
+  background: #161F2A;
+  color: white;
+  padding: 20px;
+}
+
+footer * {
+  margin: 0;
+}
+
+footer section {
+  float: left;
+  max-width: 200px;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+footer h5 {
+  color: #66768A;
+}
+
+footer section + section {
+  float: right;
+}
+
+footer section img{
+  width: 75%;
+}
+
+footer > div {
+  clear: both;
+  width: 100%;
+}
+
+footer > div p {
+  float: left;
+  border-top: 1px solid white;
+}
+
+footer > div img {
+  float: right;
+  width: 50px;
+}
+

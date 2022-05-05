@@ -1,0 +1,364 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+/* colors
+orange: ##FE8D36
+light orange: #FD9A3E
+pale orange dots: #FED4A4
+yellow star: #FEB60D
+font: dark #0C0B1B
+gray background: #EFF4F5
+
+
+font-family: 'Abril Fatface', cursive;       H1
+font-family: 'Montserrat', sans-serif;       titles
+font-family: 'Poppins', sans-serif;          testimonials
+*/
+
+
+
+body *{
+margin: 0;
+box-sizing: border-box;
+color: #0C0B1B;
+}
+
+h1, h2, h3 {
+  font-family: 'Abril Fatface', cursive;
+}
+
+h2 {
+  font-size: 3em;
+  letter-spacing: .07em;
+  margin: 10px 0;
+
+}
+
+h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  color: #FE8D36;
+}
+
+p, a {
+  font-family: 'Montserrat', sans-serif; 
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+/******************************************
+/* MAIN
+/*******************************************/
+
+main {
+  height: 600px;
+  background: url("../pics/main.jpg") right top no-repeat;
+  background-size: cover;
+}
+
+header {
+  padding: 25px 5%;
+}
+
+main h1 {
+  font-size: 4em;
+  letter-spacing: .1em;
+}
+
+main div {
+  width: 60%;
+  padding: 85px 0 0 8%;
+}
+
+main div form {
+  margin: 20px 0 25px 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+main div form input {
+  width: 66%;
+  height: 2.8em;
+  font-size: .8em;
+}
+
+main div form a {
+  background: #FE8D36;
+  padding: 11px 26px;
+  color: #fff;
+  text-decoration: none;
+  font-size: .8em;
+  border-radius: 0 5px 5px 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+main div form img {
+  height: .5em;
+}
+
+main div ul {
+  padding: 0;
+}
+
+main div ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 0 48px 0 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+main div ul li img {
+  height: 1.2em;
+}
+
+
+/******************************************
+/* NAV
+/*******************************************/
+nav img {
+  height: 1em;
+  vertical-align: middle;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav li {
+  list-style: none;
+  display: inline-block;
+  padding: 0 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #0C0B1B;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+/******************************************
+/*  ABOUT US SECTION
+/*******************************************/
+.aboutUs {
+  height: 600px;
+}
+
+.aboutUs #pieIMG {
+  height: 100%;
+  width: 40%;
+  /* *background gradient? */
+  background-image: linear-gradient(to left, rgb(255 255 255), rgb(117 19 93 / 0%) 37%), 
+                    linear-gradient(to top, rgb(255 255 255), rgb(117 19 93 / 0%) 37%), 
+                    linear-gradient(to bottom, rgb(255 255 255), rgb(117 19 93 / 0%) 25%), 
+                    url("../pics/pie.jpg");
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: left;
+ }
+
+.aboutUs div + div {
+  width: 60%;
+  height: 100%;
+  float: left;
+  background-image: linear-gradient(to right, rgb(255 255 255), rgb(117 19 93 / 0%) 37%), 
+                    linear-gradient(to bottom, rgb(255 255 255), rgb(117 19 93 / 0%) 24%),
+                    url("../pics/oats.png");
+  background-repeat: no-repeat;
+  background-position: 325px 60px;
+}
+
+.aboutUs div > div {
+  width: 70%;
+  margin: 70px 0 0 -25px;
+}
+
+.aboutUs a {
+  background: #FE8D36;
+  padding: 11px 26px;
+  color: #fff;
+  text-decoration: none;
+  font-size: .8em;
+  border-radius: 5px;
+  font-family: 'Montserrat', sans-serif;
+  display: inline-block;
+}
+
+.aboutUs a img {
+  height: 0.7em;
+  vertical-align: middle;
+}
+
+.aboutUs p {
+  line-height: 1.8em;
+  margin: 25px 0;
+  font-size: 0.7em;
+  text-align: justify;
+}
+
+/******************************************
+/*  ORDER ONLINE SECTION
+/*******************************************/
+
+.orderOnline {
+  padding-top: 50px;
+  background: #EFF4F5;
+  text-align: center;
+}
+
+.orderOnline ul {
+  padding: 0;
+}
+
+.orderOnline li {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 20px 0 ;
+  border-bottom: 1px solid;
+}
+
+.orderOnline li:hover {
+  border-bottom: 1px solid #FE8D36;
+}
+
+.orderOnline a:hover {
+  color: #FE8D36;
+}
+
+.orderOnline a {
+  text-decoration: none;
+}
+
+.menu-flex {      /*    flex box   */
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.menu-item {    /*  flex items  */
+  width: 20%;
+  height: 300px;
+  min-width: 200px;
+}
+
+.menu-item img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.menu-item:hover {
+  background-image: rgba(128, 128, 128, 0.329);
+  cursor: pointer;
+}
+
+
+@media (max-width: 1024px) {
+  .menu-item {
+    height:200px;
+  }
+}
+
+
+
+/******************************************
+/*  Book Table SECTION
+/*******************************************/
+
+.bookTable {
+  height: 800px;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.bookTable h2 {
+  margin-bottom: 40px;
+}
+
+.bookTable h3 {
+  color: #FE8D36;
+  letter-spacing: .07em;
+  font-size: 1.4em;
+}
+
+.bookTable img {
+  height: 45px;
+  display: block;
+  margin: 19px auto;
+}
+
+.bookTable #hours {
+  display: flex;
+  justify-content: space-around;
+  padding: 18px 200px;
+}
+
+.bookTable > div + div {
+  width: 47%;
+  height: 350px;
+  margin: auto;
+  background-image: url(../pics/video_still.jpg);
+  background-repeat: no-repeat;
+  background-position: -6px;
+}
+
+/******************************************
+/*  Testimonials SECTION
+/*******************************************/
+
+.testimonials {
+  padding-top: 50px;
+  height: 800px;
+  text-align: center;
+  background: #EFF4F5;
+}
+
+.testimonials ul img {
+  height: 1em;
+}
+
+.testimonials ul {
+  padding: 0;
+}
+
+.testimonials li {
+  display: inline-block;
+}
+
+.testimonials > img{
+  border-radius: 50px;
+  width: 100px;
+}
+
+.testimonials p {
+  width: 75%;
+  margin: auto;
+}

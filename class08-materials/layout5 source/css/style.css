@@ -1,0 +1,132 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+/* section 1 background color = #F5F9FC;
+section 2 background color = white;
+button color= #304759;
+text input color = #E0E9F0;
+light gray text h6 = #94A8B8; */
+
+body {
+  font-family: 'Rubik', sans-serif;
+  color: #304759;
+  background-color: #F5F9FC;
+}
+
+a {
+  text-decoration: none;
+  color: #304759;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+.button {
+  padding: 5px 8px;
+  background: #304759;
+  color: #fff;
+  font-size: .8em;
+  text-decoration: none;
+}
+
+nav {
+  margin: auto;
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+
+header > section {
+  width: 50%;
+  float: left;
+  padding: 50px 0 0 70px;
+}
+
+header section + section img {
+  width: 105%;
+  float: right;
+}
+
+/******************************************
+/* upper section
+/*******************************************/
+.uppersection {
+  clear: both;
+  height: 300px;
+  padding:30px 70px;
+}
+
+.uppersection section {
+  width: 25%;
+  float: left;
+  padding: 10px;
+}
+
+.uppersection > section > img {
+  width: 30px;
+}
+
+
+
+
+/******************************************
+/* lower section
+/*******************************************/
+.lowersection {
+  background: #FFF;
+  padding: 40px 80px;
+  height: 300px;
+}
+
+.lowersection section {
+  width: 57%;
+}
+
+.lowersection section + section {
+  width: 100%;
+  height: 100px;
+  margin: auto;
+  background-color: #E1E9F0;
+}
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+@media (max-width: 750px) {
+  
+}
