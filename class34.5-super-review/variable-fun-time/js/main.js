@@ -29,3 +29,4 @@ h1Var.addEventListener(click, addTwo)
 function addTwo(){
     console.log(aNum+inputVal)
 }
+
