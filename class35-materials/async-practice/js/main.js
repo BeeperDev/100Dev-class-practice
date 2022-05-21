@@ -107,37 +107,37 @@
 //----------------------------------------------------------------------------------------------------------------------
 
 //Code 06 - each function returns a promise object
-function houseOne(){
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            resolve('Paper delivered to house 1')
-        }, 1000)
-    })
-}
-function houseTwo(){
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            resolve('Paper delivered to house 2')
-        }, 5000)
-    })
-}
-function houseThree(){
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            resolve('Paper delivered to house 3')
-        }, 2000)
-    })
-}
-houseOne()
-    .then(data => console.log(data))
-    .then(houseTwo)
-    .then(data => console.log(data))
-    .then(houseThree)
-    .then(data => console.log(data))
-    .catch(err => console.log(err))
+// function houseOne(){
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             resolve('Paper delivered to house 1')
+//         }, 1000)
+//     })
+// }
+// function houseTwo(){
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             resolve('Paper delivered to house 2')
+//         }, 5000)
+//     })
+// }
+// function houseThree(){
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             resolve('Paper delivered to house 3')
+//         }, 2000)
+//     })
+// }
+// houseOne()
+//     .then(data => console.log(data))
+//     .then(houseTwo)
+//     .then(data => console.log(data))
+//     .then(houseThree)
+//     .then(data => console.log(data))
+//     .catch(err => console.log(err))
 
 
-
+// prints in order with proper browser delays
 // Paper delivered to house 1       
 // Paper delivered to house 2
 // Paper delivered to house 3
@@ -168,6 +168,7 @@ houseOne()
 //     })
 // }
 
+// // We have an async function that works the same as the promise chain
 // async function getPaid(){
 //     const houseOneWait = await houseOne()
 //     const houseTwoWait = await houseTwo()
@@ -179,6 +180,12 @@ houseOne()
 
 // getPaid()
 
+// prints in order all at once
+// Paper delivered to house 1       
+// Paper delivered to house 2
+// Paper delivered to house 3
+
+
 //----------------------------------------------------------------------------------------------------------------------
 
 //Code 08
@@ -189,3 +196,26 @@ houseOne()
 // }
 // getACuteDogPhoto()
 
+// Fetch finished loading: GET "https://dog.ceo/api/breeds/image/random".
+
+
+//----------------------------------------------------------------------------------------------------------------------
+
+//Code 09 - add a try/catch block
+// async function getACuteDogPhoto(){
+//     try{
+//         const res = await fetch('https://dog.ceo/api/breeds/image/random')
+//         if(!res.ok){
+//             throw new Error(`HTTP error: ${res.status}`)
+//         }
+//         const data = await res.json()
+//         console.log(data)
+//     }
+//     catch(error) {
+//         console.error(`Could not get products: ${error}`)
+//     }    
+// }
+// getACuteDogPhoto()
+
+// Fetch finished loading: GET "https://dog.ceo/api/breeds/image/random".
+// {message: 'https://images.dog.ceo/breeds/sheepdog-shetland/n02105855_982.jpg', status: 'success'}
