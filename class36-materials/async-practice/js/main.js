@@ -12,20 +12,34 @@
 // houseTwo()
 // houseThree()
 
+//-----------------------------------------------------------------------------------------------------------
 //Code 02
-// function houseOne(){
-//     console.log('Paper delivered to house 1')
-// }
-// function houseTwo(){
-//     setTimeout(() => console.log('Paper delivered to house 2'), 3000)
-// }
-// function houseThree(){
-//     console.log('Paper delivered to house 3')
-// }
-// houseOne()
-// houseTwo()
-// houseThree()
+function houseOne(){
+    console.log('Paper delivered to house 1')
+}
+function houseTwo(){
+    setTimeout(() => console.log('Paper delivered to house 2'), 1000)
+}
+function houseThree(){
+    console.log('Paper delivered to house 3')
+}
+function houseFour(){
+    setTimeout(() => console.log('Paper delivered to house 4'), 500)
+}
+houseOne()
+houseTwo()
+houseThree()
+houseFour()
 
+// OUTPUT
+// 'Paper delivered to house 1'
+// 'Paper delivered to house 3'
+// 'Paper delivered to house 4'
+// 'Paper delivered to house 2'
+
+
+
+//-----------------------------------------------------------------------------------------------------------
 //Code 03
 // function houseOne(){
 //     console.log('Paper delivered to house 1')
